@@ -1,0 +1,20 @@
+@import '_global.scss';
+@import 'page-content.scss';
+@import '_nav.scss';
+@import '_facebook-left.scss';
+@import '_facebook-right.scss';
+@import '_facebook-middle.scss';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*:focus {
+    outline: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}

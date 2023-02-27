@@ -1,0 +1,34 @@
+.create-post {
+    @include box-componente(15 , 10 , 10);
+    background-color: white;
+    img {
+        @include image-rounded (40);
+    }
+    .create-post__buttons {
+        @include flex (space-around, center);
+        padding-top: rem(10);
+        margin-top: rem(10);
+        border-top:1px solid #e4e4e4;
+        &__button {
+            @include flex(space-around, center , 10);
+            font-size: rem(18);
+            span {
+                color: #656565;
+            }
+            .one {
+                color: red;
+            }
+            .two {
+                color: orange;
+            }
+            .three {
+                color: green;
+            }
+    }
+}
+}
+@media (max-width : 768px) {
+    .create-post__buttons span {
+        font-size: 15px;
+    }
+}
